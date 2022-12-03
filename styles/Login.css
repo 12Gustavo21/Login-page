@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #9eff76;
+}
+
 *,
 *::after,
 *::before {
@@ -7,7 +11,10 @@
 }
 
 main {
-    background-color: #212000;
+    background-image: url(../img/Login-Background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -24,14 +31,6 @@ main {
     align-items: center;
 }
 
-.LoginBackground {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
 .login-box {
     z-index: 1;
     width: 100%;
@@ -42,7 +41,7 @@ main {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 10px;
-    border: 2px solid #9fff7659;
+    border-bottom: 5px solid var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,6 +59,15 @@ form {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+}
+
+.FormBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-box .user-box {
@@ -93,12 +101,13 @@ form {
 .login-box .user-box input:valid~label {
     top: -20px;
     left: 0;
-    color: #9eff76;
+    color: var(--primary-color);
     font-size: 1.2rem;
+    filter: drop-shadow(0 0 0.5rem #212000);
 }
 
 .login-box:hover {
-    box-shadow: 0 8px 32px 0 #9fff76;
+    box-shadow: 0 8px 32px 0 var(--primary-color);
 }
 
 .FormTitle {
@@ -119,7 +128,7 @@ button {
     border: none;
     outline: none;
     border-radius: 5px;
-    background-color: #9eff76;
+    background-color: var(--primary-color);
     color: #212000;
     font-size: 1.2rem;
     font-weight: 700;
@@ -135,7 +144,7 @@ button {
 button::after {
     content: '';
     position: absolute;
-    background: #9eff76;
+    background: var(--primary-color);
     width: 8px;
     top: 0;
     bottom: 0;
@@ -151,7 +160,7 @@ button:hover::after {
 
 button:hover {
     background-color: #212000;
-    color: #9eff76;
+    color: var(--primary-color);
     border-radius: 10px;
 }
 
@@ -186,7 +195,7 @@ button:hover {
 .signUpBox a::after {
     content: "";
     display: block;
-    border-bottom: solid 2px #9eff76;
+    border-bottom: solid 2px var(--primary-color);
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
@@ -197,6 +206,6 @@ button:hover {
 
 
 .signUpBox a:hover {
-    color: #9eff76;
+    color: var(--primary-color);
     filter: drop-shadow(0 0 0.75rem #212000);
 }
