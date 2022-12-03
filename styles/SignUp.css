@@ -1,0 +1,220 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #364240;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUpBackground {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.signup-box {
+    z-index: 1;
+    width: 100%;
+    height: 70vh;
+    max-width: 500px;
+    min-height: 75vh;
+    background: rgba(255, 255, 255, 0.503);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 2px solid #1cf0ff61;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    font-family: 'Zilla Slab', serif;
+    position: absolute;
+    gap: 1.5rem;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-box .user-box {
+    position: relative;
+}
+
+.signup-box .user-box input {
+    width: 100%;
+    padding: .7rem 0;
+    font-size: 1.2rem;
+    color: #364240;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: 1px solid #364240;
+    outline: none;
+    background: transparent;
+}
+
+.signup-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    color: #212000;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.signup-box .user-box input:focus~label,
+.signup-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #1cf0ff;
+    font-size: 1.2rem;
+}
+
+.signup-box:hover {
+    box-shadow: 0 8px 32px 0 #1cefff;
+}
+
+.FormTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #212000;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Krub', sans-serif;
+    user-select: none;
+}
+
+.inputBox {
+    width: 100%;
+    max-width: 400px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 1.7rem;
+}
+
+.inputBox input {
+    width: 100%;
+    max-width: 500px;
+    height: 7vh;
+    padding: 1rem;
+    caret-color: #1cefff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font: 1.2rem 'Zilla Slab', serif;
+}
+
+.inputBox input:focus {
+    outline: 2px solid #1cefff;
+}
+
+button {
+    width: 100%;
+    max-width: 200px;
+    height: 5vh;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #1cefff;
+    color: #212000;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0);
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    background: #1cefff;
+    width: 8px;
+    top: 0;
+    bottom: 0;
+    left: -32px;
+    transform: rotate(-16deg);
+    filter: blur(6px);
+}
+
+button:hover::after {
+    left: calc(100% + 32px);
+    transition: .75s;
+}
+
+button:hover {
+    background-color: #364240;
+    color: #1cefff;
+    border-radius: 10px;
+}
+
+.loginBox {
+    width: 100%;
+    max-width: 400px;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.loginBox a {
+    font-weight: 400;
+    color: #212000;
+    text-decoration: none;
+    font-family: 'Zilla Slab', serif;
+    transition: 1s ease;
+}
+
+.loginBox a::after {
+    content: "";
+    display: block;
+    border-bottom: solid 2px #1cefff;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.loginBox a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.loginBox a:hover {
+    color: #1cefff;
+    filter: drop-shadow(.5rem 0 .7rem #000000);
+}
