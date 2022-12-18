@@ -35,7 +35,7 @@ main {
     z-index: 1;
     width: 100%;
     height: 70vh;
-    max-width: 500px;
+    max-width: 400px;
     min-height: 75vh;
     background: rgba(255, 255, 255, 0.503);
     backdrop-filter: blur(5px);
@@ -68,6 +68,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: .7rem;
 }
 
 .signup-box .user-box {
@@ -78,7 +79,6 @@ form {
     width: 100%;
     padding: .7rem 0;
     font-size: 1.2rem;
-    color: #364240;
     margin-bottom: 2rem;
     border: none;
     border-bottom: 1px solid #364240;
@@ -192,7 +192,7 @@ button:hover {
 
 .loginBox {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     height: 10vh;
     display: flex;
     justify-content: flex-end;
@@ -226,4 +226,24 @@ button:hover {
 .loginBox a:hover {
     color: var(--primary-color);
     filter: drop-shadow(.5rem 0 .7rem #000000);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 410px) {
+    .signup-box {
+        max-width: 350px;
+    }
+
+    .loginBox {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    .signup-box {
+        max-width: 300px;
+    }
+
+    .loginBox {
+        max-width: 250px;
+    }
 }

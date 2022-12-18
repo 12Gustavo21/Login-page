@@ -35,7 +35,7 @@ main {
     z-index: 1;
     width: 100%;
     height: 70vh;
-    max-width: 500px;
+    max-width: 400px;
     min-height: 70vh;
     background: rgba(255, 255, 255, 0.503);
     backdrop-filter: blur(5px);
@@ -58,7 +58,6 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
 }
 
 .FormBox {
@@ -68,6 +67,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .login-box .user-box {
@@ -174,7 +174,7 @@ button:hover {
 
 .signUpBox {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     height: 10vh;
     display: flex;
     justify-content: flex-end;
@@ -208,4 +208,24 @@ button:hover {
 .signUpBox a:hover {
     color: var(--primary-color);
     filter: drop-shadow(0 0 0.75rem #212000);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 410px) {
+    .login-box {
+        max-width: 350px;
+    }
+
+    .signUpBox {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    .login-box {
+        max-width: 300px;
+    }
+
+    .signUpBox {
+        max-width: 250px;
+    }
 }
