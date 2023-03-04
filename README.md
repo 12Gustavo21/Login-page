@@ -5,7 +5,7 @@
 ## Personal project
 
 <div align="center">
-<img width ="500px" height="250px" src ='https://media.discordapp.net/attachments/1000858323026989078/1081392776068993114/image.png?width=1261&height=600' /> <img width ="500px" height="250px" src ='https://media.discordapp.net/attachments/1000858323026989078/1081392776299687967/image.png?width=1257&height=600' />
+<img width ="700px" height="300px" src ='https://media.discordapp.net/attachments/1000858323026989078/1081392776068993114/image.png?width=1261&height=600' /> <img width ="700px" height="300px" src ='https://media.discordapp.net/attachments/1000858323026989078/1081392776299687967/image.png?width=1257&height=600' />
 </div>
 
 *Technologies*
